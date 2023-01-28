@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+
+      <div class="nav-links" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">SEL</a></li>
+          <li><a href="./course.html">SD</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Countact Us</h1>
+  </section>
+
+<section class="contact-us">
+  <div class="contact-col">
+    <div>
+      <i class="fa fa-book-bookmark"></i>
+      <span>
+        <h5>Resource of Sleep Disorders</h5>
+        <h3>(Mayo clinic) : https://www.mayoclinic.org/diseases-conditions/insomnia/symptoms-causes/syc-20355167?p=1.</h3>
+      </span>
+    </div>
+    <div>
+      <i class="fa fa-book-bookmark"></i>
+      <span>
+        <h5>Resource of Social Emotional Learning</h5>
+        <h3>https://assets.ctfassets.net/98bcvzcrxclo/2JXR6ltfi00qe2CCg
+          60OKC/ac97b583500cbed6965fe76fd8f12705/sel-e-book.pdf
+        </h3>
+      </span>
+    </div>
+  </div>
+</section>
+
+  <Script>
+    var navlinks=document.getElementById("navlinks");
+    function showMenu(){
+      navlinks.style.right = "0";
+    }
+    function hideMenu(){
+      navlinks.style.right = "-200px ";
+    } 
+  </Script>
+</body>
+
+</html>

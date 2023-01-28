@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+
+      <div class="nav-links" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./course.html">COURSE</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>our certificate & online Programms for 2023</h1>
+  </section>
+  <section class="blog-content">
+    <div class="row">
+      <div class="blog-left">
+        <img src="./images/certificate.jpg">
+        <h2>our certificate & online Programms for 2021</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, ad. </p>
+        <br>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, commodi, provident pariatur voluptate quia
+          cumque sunt tempore harum voluptates voluptatem velit repellendus numquam laudantium minus.</p>
+        <br>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto ab laudantium quos magni, hic
+          autem suscipit modi voluptate animi.
+        </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis repudiandae molestiae modi quo
+          soluta accusamus ducimus, ullam reiciendis, quidem quaerat expedita libero reprehenderit temporibus ipsum.
+          Molestias deserunt nisi iure officiis commodi laboriosam dicta at veritatis. Ex eveniet officia praesentium
+          quo vel enim facilis totam, ut minima, eum vitae nesciunt aliquid! Doloribus mollitia officia voluptatem, unde
+          error minus necessitatibus optio.
+        </p>
+        <div class="comment-box">
+          <h3>Leave a comment</h3>
+          <form action="" class="comment-form">
+            <input type="text" required placeholder="Enter Name">
+            <input type="text" required placeholder="Enter Email">
+            <textarea required rows="5" placeholder="Your comment"></textarea>
+            <button type="submit" class="hero-btn red-btn">Sent Comment</button>
+          </form>
+        </div>
+      </div>
+      <div class="blog-right">
+        <h3>Post catagories</h3>
+        <div>
+          <span>Business Analytics</span>
+          <span>23</span>
+        </div>
+        <div>
+          <span>Computer Scince</span>
+          <span>23</span>
+        </div>
+        <div>
+          <span>system Analytics</span>
+          <span>33</span>
+        </div>
+        <div>
+          <span>Data Scince</span>
+          <span>26</span>
+        </div>
+        <div>
+          <span>system engineering</span>
+          <span>23</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="foooter">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart-circle-check "></i> by Easy toturials </p>
+  </section>
+  <Script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu() {
+      navlinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navlinks.style.right = "-200px ";
+    }
+  </Script>
+</body>
+
+</html>
